@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('./src/Frontend'));
 
-const todoRoutes = require('./src/Routes/todos');
+const todoRoutes = require('../Routes/todos');
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('./src/Frontend/index.html'));

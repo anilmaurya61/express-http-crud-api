@@ -5,6 +5,7 @@
   "main": "index.js",
   "test": "echo \"Error: no test specified\" && exit 1",
   "scripts": {
+    "start": "node src/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
   },
