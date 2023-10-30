@@ -37,16 +37,29 @@ Proper HTTP status codes are used for clear responses.
 
 ## Getting Started
 
-1. Clone the repo.
-2. Configure your database connection.
+1. Clone the repository to your local machine.
+
+2. Configure your database connection in the `src/config/config.json` file. Ensure that the `development` environment in the `config.json` file matches your PostgreSQL database settings:
+
+   ```ruby
+   {
+     "development": {
+       "dialect": "postgres",
+       "username": "user_name",
+       "password": "password",
+       "database": "database_name",
+       "host": "localhost"
+     }
+   }
+   ```
 3. Install dependencies
 
    ```ruby
-       npm install
+      npm install
    ```
 
 4. Start the app
 
    ```ruby
-   npm start
+      npm start
    ```
