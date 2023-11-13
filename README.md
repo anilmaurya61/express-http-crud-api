@@ -39,18 +39,16 @@ Proper HTTP status codes are used for clear responses.
 
 1. Clone the repository to your local machine.
 
-2. Configure your database connection in the `src/config/config.json` file. Ensure that the `development` environment in the `config.json` file matches your PostgreSQL database settings:
+2. Create an .env file with the following content:
 
    ```ruby
-   {
-     "development": {
-       "dialect": "postgres",
-       "username": "user_name",
-       "password": "password",
-       "database": "database_name",
-       "host": "localhost"
-     }
-   }
+      NODE_ENV=development
+      DB_DIALECT=postgres
+      DB_USERNAME=user_name
+      DB_PASSWORD=password
+      DB_DATABASE=database_name
+      DB_HOST=localhost
+      PORT=8080
    ```
 3. Install dependencies
 
