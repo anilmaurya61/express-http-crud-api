@@ -1,3 +1,81 @@
 #popup {
   display: none;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+}
+#todoText {
+  padding: 10px;
+  margin: 10px;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#addTodoBtn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#addTodoBtn:hover {
+  background-color: #45a049;
+}
+
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+#popup input,
+#popup button {
+  margin: 5px;
+}

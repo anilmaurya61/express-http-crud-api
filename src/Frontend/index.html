@@ -1,66 +1,43 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Todo List</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <h1>Todo List</h1>
-    <h2>Add Todo</h2>
-    <form id="addTodoForm">
-      <input
-        type="text"
-        id="todoText"
-        placeholder="Enter a new todo"
-        required
-      />
-      <label for="isCompleted">Is Completed?</label>
-      <input
-        type="radio"
-        id="isCompletedYes"
-        name="isCompleted"
-        value="true"
-        required
-      />
-      <label for="isCompletedYes">Yes</label>
-      <input
-        type="radio"
-        id="isCompletedNo"
-        name="isCompleted"
-        value="false"
-        required
-      />
-      <label for="isCompletedNo">No</label>
-      <button type="submit">Add Todo</button>
-    </form>
 
-    <h2>Todo List</h2>
-    <ul id="todoList"></ul>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
 
-    <div id="popup" class="modal">
-      <div class="modal-content">
-        <h2>Update Todo</h2>
-        <input type="text" id="updateTodoText" placeholder="New Todo Text" />
-        <label for="updateIsCompleted">Is Completed?</label>
-        <input
-          type="radio"
-          id="updateIsCompletedYes"
-          name="updateIsCompleted"
-          value="true"
-        />
-        <label for="updateIsCompletedYes">Yes</label>
-        <input
-          type="radio"
-          id="updateIsCompletedNo"
-          name="updateIsCompleted"
-          value="false"
-        />
-        <label for="updateIsCompletedNo">No</label>
-        <button id="saveUpdate">Save</button>
-        <button id="closePopup">Close</button>
-      </div>
+<body>
+  <h1>Todo List</h1>
+  <h2>Add Todo</h2>
+  <form id="addTodoForm">
+    <input type="text" id="todoText" placeholder="Enter todo">
+
+    <label for="isCompleted">Is Completed?</label>
+    <input type="radio" id="isCompletedYes" name="isCompleted" value="true" required />
+    <label for="isCompletedYes">Yes</label>
+    <input type="radio" id="isCompletedNo" name="isCompleted" value="false" required />
+    <label for="isCompletedNo">No</label>
+    <button id="addTodoBtn" onclick="createTodo()">Add Todo</button>
+  </form>
+
+  <h2>Todo List</h2>
+  <ul id="todoList"></ul>
+
+  <div id="popup" class="modal">
+    <div class="modal-content">
+      <h2>Update Todo</h2>
+      <input type="text" id="updateTodoText" placeholder="New Todo Text" />
+      <label for="updateIsCompleted">Is Completed?</label>
+      <input type="radio" id="updateIsCompletedYes" name="updateIsCompleted" value="true" />
+      <label for="updateIsCompletedYes">Yes</label>
+      <input type="radio" id="updateIsCompletedNo" name="updateIsCompleted" value="false" />
+      <label for="updateIsCompletedNo">No</label>
+      <button id="saveUpdate">Save</button>
+      <button id="closePopup">Close</button>
     </div>
+  </div>
 
-    <script src="./index.js"></script>
-  </body>
+  <script src="./index.js"></script>
+</body>
+
 </html>
