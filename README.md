@@ -38,8 +38,11 @@ Proper HTTP status codes are used for clear responses.
 ## Getting Started
 
 1. Clone the repository to your local machine.
+   ```ruby
+   git clone https://github.com/anilmaurya61/express-http-crud-api.git
+   ```
 
-2. Create an .env file with the following content:
+3. Create an .env file with the following content:
 
    ```ruby
       NODE_ENV=development
@@ -50,13 +53,13 @@ Proper HTTP status codes are used for clear responses.
       DB_HOST=localhost
       PORT=8080
    ```
-3. Install dependencies
+4. Install dependencies
 
    ```ruby
       npm install
    ```
 
-4. Start the app
+5. Start the app
 
    ```ruby
       npm start
