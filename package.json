@@ -5,7 +5,7 @@
   "main": "index.js",
   "test": "echo \"Error: no test specified\" && exit 1",
   "scripts": {
-    "start": "node src/server/server.js",
+    "start": "npx nodemon src/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
   },
@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "pg": "^8.11.3",

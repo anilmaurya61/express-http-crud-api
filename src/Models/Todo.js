@@ -1,9 +1,7 @@
 const { Sequelize, Model, DataTypes } = require('sequelize');
-const config = require('../config/config.json');
+const database = require('../Database/db')
 
-const sequelize = new Sequelize(config.development);
-
-const Todo = sequelize.define(
+const Todo = database.define(
   'Todos',
   {
     text: {
@@ -16,13 +14,13 @@ const Todo = sequelize.define(
     },
   },
   {
-    timestamps: true,
+    timestamps: false,
   },
 );
 
 (async () => {
   try {
-    await sequelize.sync();
+    await database.sync();
     console.log('Database synchronized successfully.');
   } catch (error) {
     console.error('Error synchronizing the database:', error);
